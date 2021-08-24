@@ -1,11 +1,12 @@
 <?php
 
 
-    $n1=$_GET['n1'];
-    $n2 =$_GET['n2'];
-    $op = $_GET['op'];
+    $n1=$_POST['n1'];
+    $n2 =$_POST['n2'];
+    $op =$_POST['op'];
     $outcome = 0;
-    if($op=="sum"){
+
+    if((isset)$op=="sum"){
         $outcome = $n1+$n2;
     }elseif ($op == "subtraction") {
         $outcome= $n1-$n2;
