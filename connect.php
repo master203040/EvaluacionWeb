@@ -6,7 +6,7 @@
     $op =$_POST['op'];
     $outcome = 0;
 
-    if((isset)$op=="sum"){
+    if(isset($op=="sum")){
         $outcome = $n1+$n2;
     }elseif ($op == "subtraction") {
         $outcome= $n1-$n2;
