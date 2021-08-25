@@ -15,7 +15,7 @@
                     <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
                 </a>
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark text-white">workshop_One</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark text-white">Features</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark text-white">Pricing</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark text-white" >FAQs</a></li>
@@ -25,7 +25,7 @@
         </div>
         <main>
             <div class="container">
-                <form action="connect.php" method="post">
+                <form action="connect.php" method="POST">
                     <h1 class="text-center">Calculation</h1>
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4">
@@ -45,14 +45,6 @@
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4">
-                        <div class="mb-3">
-                            <label  class="form-label">outcome</label>
-                            <input type="text" class="form-control" name="outcome">
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
                         <select class="form-select" aria-label="Default select example" name="op">
                             <option selected>Open this select menu</option>
                             <option value="sum">sum</option>
@@ -67,6 +59,7 @@
                         <button type="submit" class="btn btn-primary w-100" name="button">Calculation</button>
                     </div>
                 </div>
+                <h1 class="p-2 text-center">El Resultado De La Operacion</h1>
                 </form>
             </div>
         </main>

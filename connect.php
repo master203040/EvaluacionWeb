@@ -1,21 +1,33 @@
 <?php
 
-
-    $n1=$_POST['n1'];
-    $n2 =$_POST['n2'];
+    $num1=$_POST['n1'];
+    $num2 =$_POST['n2'];
     $op =$_POST['op'];
-    $outcome = 0;
+    
+    if ($op== "sum"){
 
-    if(isset($op=="sum")){
-        $outcome = $n1+$n2;
-    }elseif ($op == "subtraction") {
-        $outcome= $n1-$n2;
-    }elseif ($op =="multiplication"){
-      $outcome = $n1*$n2;  
-    }elseif ($op =="division") {
-        $outcome = $n1/$n2;
+        $outcome = $num1+$num2;
+        echo "la suma de ".$num1."+".$num2."=".$outcome;
+    }elseif($op=="subtraction"){
+
+        $outcome = $num1-$num2;
+        echo "la resta de".$num1."-",$num2."=".$outcome;
+    }elseif($op =="multiplication"){
+
+        $outcome = $num1*$num2;
+        echo"la multiplicacion de ".$num1."*".$num2."=".$outcome;
+
+    }elseif($op =="division"){
+
+        $outcome = $num1/$num2;
+        echo "la division de".$num1."/".$num2."=".$outcome;
     }
 
-    echo"el resultado es : ".$outcome;
+
+    
+
+
+
+   
 
 ?>
