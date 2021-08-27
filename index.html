@@ -12,11 +12,11 @@
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
                 </a>
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ">
-                    <li><a href="#" class="nav-link px-2 link-dark text-white">workshop_One</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark text-white">Features</a></li>
+                    <li><a href="index.html" class="nav-link px-2 link-dark text-white">workshop_One</a></li>
+                    <li><a href="view.html" class="nav-link px-2 link-dark text-white">workshop_two</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark text-white">Pricing</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark text-white" >FAQs</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark text-white">About</a></li>
@@ -27,39 +27,38 @@
             <div class="container">
                 <form action="connect.php" method="POST">
                     <h1 class="text-center">Calculation</h1>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <label  class="form-label">enter then fist number</label>
-                            <input type="text" class="form-control" name="n1">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label  class="form-label">Enter then fist number</label>
+                                <input type="text" class="form-control" name="n1">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <label  class="form-label">enter then second number</label>
-                            <input type="text" class="form-control" name="n2">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label  class="form-label">Enter then second number</label>
+                                <input type="text" class="form-control" name="n2">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <select class="form-select" aria-label="Default select example" name="op">
-                            <option selected>Open this select menu</option>
-                            <option value="sum">sum</option>
-                            <option value="subtraction">subtraction</option>
-                            <option value="multiplication">multiplication</option>
-                            <option value="division">division</option>
-                          </select>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <select class="form-select" aria-label="Default select example" name="op">
+                                <option selected>Open this select menu</option>
+                                <option value="sum">sum</option>
+                                <option value="subtraction">subtraction</option>
+                                <option value="multiplication">multiplication</option>
+                                <option value="division">division</option>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100" name="button">Send</button>
+                        </div>
                     </div>
-                </div><br>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <button type="submit" class="btn btn-primary w-100" name="button">Calculation</button>
-                    </div>
-                </div>
-                <h1 class="p-2 text-center">El Resultado De La Operacion</h1>
                 </form>
             </div>
         </main>
