@@ -7,7 +7,6 @@
     $fr5 = $_POST["fruit5"];
     
 
-    echo "esta es una fruta ".$fr1. "y" ;
-
+   
 
 ?>
