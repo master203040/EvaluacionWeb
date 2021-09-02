@@ -1,16 +1,13 @@
 <?php
 
-$opt1 = $_POST["opt1"];
-$opt2 = $_POST["opt2"];
-$opt3 = $_POST["opt3"];
-$opt4 = $_POST["opt4"];
-$opt5 = $_POST["opt5"];
+    $fr1 = $_POST["fruit1"];
+    $fr2 = $_POST["fruit2"];
+    $fr3 = $_POST["fruit3"];
+    $fr4 = $_POST["fruit4"];
+    $fr5 = $_POST["fruit5"];
+    
 
-
-if($opt1 == "papaya"){
-
-    echo "fruta".$opt1;
-}
+    echo "esta es una fruta ".$fr1. "y" ;
 
 
 ?>
