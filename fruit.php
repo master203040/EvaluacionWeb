@@ -6,7 +6,6 @@
     $fr4 = $_POST["fruit4"];
     $fr5 = $_POST["fruit5"];
     
-
+    
    
-
-?>
+?> 
