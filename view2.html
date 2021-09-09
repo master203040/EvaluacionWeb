@@ -26,11 +26,20 @@
         <form action="massPerson.php" method="post">
             <div class="container">
                 <h1 class="text-white text-center fw-bould p-1">Calculate the Body mass of a Person</h1>
+
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4">
                         <div class="mb-3">
                             <label class="form-label">what is your weight</label>
-                            <input type="text" class="form-control" name="weight">
+                            <input type="text" class="form-control" name="name">
+                          </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">what is your weight</label>
+                            <input type="number" class="form-control" name="weight" step="0.01">
                           </div>
                     </div>
                 </div>
@@ -38,7 +47,7 @@
                     <div class="col-md-4">
                         <div class="mb-3">
                             <label class="form-label">what is your height</label>
-                            <input type="text" class="form-control" name="height">
+                            <input type="number" class="form-control" name="height" step="0.01">
                         </div>
                     </div>
                 </div>
