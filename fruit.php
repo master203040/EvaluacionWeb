@@ -16,7 +16,7 @@
     );
     foreach ($fruit as $fruit) {
            
-        echo('<strong>'.$fruit.'</strong><br>');
+        print_r($fruit);
     }
 
     
