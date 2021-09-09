@@ -23,14 +23,14 @@
         </header>
     </div>
     <main>
-        <form action="massPerson.php" method="post">
+        <form action="massPerson.php" method="POST">
             <div class="container">
                 <h1 class="text-white text-center fw-bould p-1">Calculate the Body mass of a Person</h1>
 
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4">
                         <div class="mb-3">
-                            <label class="form-label">what is your weight</label>
+                            <label class="form-label">what´s is your name</label>
                             <input type="text" class="form-control" name="name">
                           </div>
                     </div>
@@ -39,7 +39,7 @@
                     <div class="col-md-4">
                         <div class="mb-3">
                             <label class="form-label">what is your weight</label>
-                            <input type="number" class="form-control" name="weight" step="0.01">
+                            <input type="number" class="form-control" name="peso" step="0.01" placeholder="Kg">
                           </div>
                     </div>
                 </div>
@@ -47,17 +47,16 @@
                     <div class="col-md-4">
                         <div class="mb-3">
                             <label class="form-label">what is your height</label>
-                            <input type="number" class="form-control" name="height" step="0.01">
+                            <input type="number" class="form-control" name="estatura" step="0.01">
                         </div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4">
-                        <button type="submit" class="btn btn-primary w-100" name="button">Send</button>
+                        <button type="submit" class="btn btn-primary w-100" name="calcular">Send</button>
                     </div>
                 </div>
             </div>
-
         </form>
     </main>
 

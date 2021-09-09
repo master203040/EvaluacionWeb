@@ -1,50 +1,50 @@
 
 <?php
 
-if (isset($_POST["button"])){
+if (isset($_POST["calcular"])){
 
 
-    $weigth = $_POST["weigth"];
-    $heigth = $_POST["heigth"];
+    $peso = $_POST["peso"];
+    $altura = $_POST["estatura"];
 
-    $imc = $weigth /($heigth*$heigth);
+    $imc = $peso/($altura* $altura);
 
-    echo ("its IMC is from".$imc);
+    echo ("its IMC is from ".$imc);
 
     if($imc < 18.5){
 
-        echo("the weigth  it is insufficient");
+        echo(" the weigth  it is insufficient");
 
     }else if($imc >= 18.5 && $imc <= 24.9){
 
-        echo("the weigth it is normal");
+        echo(" the weigth it is normal <bre>");
 
     }else if ($imc >= 25 && $imc <= 29.9 ) {
         
-        echo("over weigth it is grade one");
+        echo(" over weigth it is grade one ");
 
     }else if ($imc >= 27 && $imc <= 29.9) {
         
-        echo("over weigth it is grade two");
+        echo(" over weigth it is grade two ");
 
     }else if ($imc >= 30 && $imc <= 34.9  ){
 
-        echo ("obese one"); 
+        echo (" obese one "); 
 
     }else if ($imc >=35 && $imc <= 39.9){
        
-        echo ("obese one"); 
+        echo (" obese one "); 
 
     }else if ($imc >= 40 && $imc <= 49.9){
         
-        echo ("obese two"); 
+        echo (" obese two "); 
 
     }else if ($imc >= 50) {
         
-        echo ("obese threen"); 
+        echo (" obese threen "); 
     }else{
 
-        echo("check all data entered ")
+        echo(" check all data entered ");
     }
 
 }
