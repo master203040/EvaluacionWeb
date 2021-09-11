@@ -83,7 +83,7 @@ if (isset($_POST["calcular"])){
         </header>
     </div>
     <main>
-        <form action="massPerson.php" method="POST">
+        <form action="view2.php" method="POST">
             <div class="container">
                 <h1 class="text-white text-center fw-bould p-1">Calculate the Body mass of a Person</h1>
 
