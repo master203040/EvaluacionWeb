@@ -1,3 +1,26 @@
+<?php
+
+if (isset($_POST["send"])){
+
+    $fruit = array(
+                
+        array('name'=>"nombreFruit1",'foto1'=>""),
+        array('name'=>"nombreFruit2",'foto'=>""),
+        array('name'=>"nombreFruit3",'foto'=>""),
+        array('name'=>"nombreFruit4",'foto'=>""),
+        array('name'=>"nombreFruit5",'foto'=>"")
+        
+    
+    
+    );
+
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,14 +46,14 @@
         </header>
     </div>
     <main>
-        <form action="fruit.php" method="POST">
+        <form action="view.php" method="POST">
             <div class="container">
                 <h1 class="text-white text-center fw-bould p-1">Menu for a splash</h1>
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-4">
                         <div class="mb-3">
                             <label class="form-label">Choose the first fruit</label>
-                            <input type="text" class="form-control" name="fruit1">
+                            <input type="text" class="form-control" name="nombreFruit1">
                           </div>
                     </div>
                 </div>
