@@ -26,57 +26,101 @@
         </header>
     </div>
     <main>
-        <form action="fruit.php" method="POST">
-            <div class="container">
-                <h1 class="text-white text-center fw-bould p-1">Menu for a splash</h1>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <label class="form-label">Choose the first fruit</label>
-                            <input type="text" class="form-control" name="nombreFruit1">
-                          </div>
+        <div class="container-sm bg-secondary ">
+            <form action="fruit.php" method="POST">
+                <div class="container">
+                    <h1 class="text-dark text-center fw-bould p-1">Menu for a splash</h1>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label text-dark fw-bolder">Choose the first fruit</label>
+                                <input type="text" class="form-control" name="fruitName1">
+                              </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <label class="form-label">Choose the second fruit</label>
-                            <input type="text" class="form-control" name="fruit2">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label text-dark fw-bolder">insert URL</label>
+                                <input type="text" class="form-control" name="imagenPiture1">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label text-dark fw-bolder">Choose the second fruit</label>
+                                <input type="text" class="form-control" name="fruitName2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label text-dark fw-bolder">insert URL</label>
+                                <input type="text" class="form-control" name="imagenPiture2">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label  class="form-label text-dark fw-bolder">Choose the third fruit</label>
+                                <input type="text" class="form-control" name="fruitName3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label text-dark fw-bolder">insert URL</label>
+                                <input type="text" class="form-control" name="imagenPiture3">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label  class="form-label text-dark fw-bolder">Choose the four fruit</label>
+                                <input type="text" class="form-control" name="fruitName4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label text-dark fw-bolder">insert URL</label>
+                                <input type="text" class="form-control" name="imagenPiture4">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label  class="form-label text-dark fw-bolder">Choose the five fruit</label>
+                                <input type="text" class="form-control" name="fruitName5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label text-dark fw-bolder">insert URL</label>
+                                <input type="text" class="form-control" name="imagenPiture5">
+                              </div>
                         </div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <label  class="form-label">Choose the third fruit</label>
-                            <input type="text" class="form-control" name="fruit3">
-                        </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-primary w-100" name="send">Send</button>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <label  class="form-label">Choose the four fruit</label>
-                            <input type="text" class="form-control" name="fruit4">
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4">
-                        <div class="mb-3">
-                            <label  class="form-label">Choose the five fruit</label>
-                            <input type="text" class="form-control" name="fruit5">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-3">
-                    <button type="submit" class="btn btn-primary w-100" name="send">Send</button>
-                </div>
-            </div>
-        </form>
-    </main>
+               <br>
+            </form>
+        </main>
+        </div>
+        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>    
 </body>
 </html>
