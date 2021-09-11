@@ -59,7 +59,7 @@ if ($op== "sum"){
         </div>
         <main>
             <div class="container">
-                <form action="connect.php" method="POST">
+                <form action="index.php" method="POST">
                     <h1 class="text-center">Calculation</h1>
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-4">
