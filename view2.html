@@ -1,57 +1,5 @@
 
-<?php
 
-if (isset($_POST["calcular"])){
-
-
-    $peso = $_POST["peso"];
-    $altura = $_POST["estatura"];
-
-    $imc = $peso/($altura* $altura);
-
-    echo ("its IMC is from ".$imc);
-
-    if($imc < 18.5){
-
-        echo(" the weigth  it is insufficient");
-
-    }else if($imc >= 18.5 && $imc <= 24.9){
-
-        echo(" the weigth it is normal <bre>");
-
-    }else if ($imc >= 25 && $imc <= 29.9 ) {
-        
-        echo(" over weigth it is grade one ");
-
-    }else if ($imc >= 27 && $imc <= 29.9) {
-        
-        echo(" over weigth it is grade two ");
-
-    }else if ($imc >= 30 && $imc <= 34.9  ){
-
-        echo (" obese one "); 
-
-    }else if ($imc >=35 && $imc <= 39.9){
-       
-        echo (" obese one "); 
-
-    }else if ($imc >= 40 && $imc <= 49.9){
-        
-        echo (" obese two "); 
-
-    }else if ($imc >= 50) {
-        
-        echo (" obese threen "); 
-    }else{
-
-        echo(" check all data entered ");
-    }
-
-}
-
-
-
-?>
 
 
 
@@ -83,7 +31,7 @@ if (isset($_POST["calcular"])){
         </header>
     </div>
     <main>
-        <form action="view2.php" method="POST">
+        <form action="mass.php" method="POST">
             <div class="container">
                 <h1 class="text-white text-center fw-bould p-1">Calculate the Body mass of a Person</h1>
 
@@ -118,10 +66,8 @@ if (isset($_POST["calcular"])){
                 </div>
             </div>
         </form>
+        
     </main>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>    
 </body>
 </html>
