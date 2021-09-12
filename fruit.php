@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
-<body>
+<body class = "bg-success p-2 text-dark bg-opacity-25">
 <?php
 
 if(isset($_POST["send"])){
@@ -27,11 +27,11 @@ if(isset($_POST["send"])){
 <?php if(isset($_POST["send"])): ?>
     <?php foreach($frutas as $fruta): ?>
         <?php if($fruta["name"]  !=null):  ?>
-            <div class="col">
-                <div class="card h-100">
+            <div class="col-md-4 p-2">
+                <div class="card" style = "width:18rem;">
                     <img src="<?php echo($fruta["imagen"]) ?>" class="card-img-top" alt="foto">
                     <div class="card-body">
-                        <h5 class="card-title text-dark"><?php echo($fruta["name"])?></h5>
+                        <h5 class="card-title text-dark text-center fw-bolder"><?php echo($fruta["name"])?></h5>
                     </div>
                 </div>
              </div>
