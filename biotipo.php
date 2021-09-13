@@ -14,41 +14,47 @@
         <?php
 
         $nombre = $_POST["name"];
-        $estatura = $_POST["n2"];
+        $altura = $_POST["altura"];
 
         if(isset($_POST["send"])){
 
         
-            if ($estatura < 1.70) {
+            if ($altura < 1.70) {
                 
-                $estatura = "infinito";
+                $biotipo ="Infinite";
 
-            }else if ($altura => 1.70 && $altura< 1.80){
+            }else if($altura <= 1.70 &&  $altura <= 1.80){
 
-                
+                $biotipo = "Average";
+
+            }else if($altura > = 1.80){
+
+                $biotipo = "Higher";
+
+            }else{
+
+                $biotipo = "Check the input data";
             }
-            
-
-              
+               
         }
 
 
         ?>
 
         <div class="row d-flex justify-content-center p-2">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card border-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header fw-bolder"><?php echo($nombre)?></div>
+                <div class="card-header fw-bolder text-center">His name: <?php echo($nombre)?></div>
                     <div class="card-body text-dark">
-                        <h5 class="card-title"> Total: <?php echo($estatura)?></h5>
+                        <h5 class="card-title">His biotype is: <?php echo($biotipo)?></h5>
+                        <h5 class="card-title">His heingt is: <?php echo($altura)?></h5>
                     </div>
                 </div>
                 </div>
             </div>
-            <div class="col-md-10 text-center">
+            <div class="col-md-11 text-center">
               <a href="view3.html" class="link-primary">To Return</a>
             </div>
-            
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>    
     </body>
