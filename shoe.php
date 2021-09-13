@@ -17,12 +17,21 @@
 
     if ($quantity == 2) {
         
-        $outcome = $quantity * $value * $discount = 0.10;
+        $outcome = $quantity * $value - $discount = 10;
+
+    }else if( $quantity == 4){
+
+        $outcome = $quantity * $value - $discount = 20;
+
+    }else if($quantity == 5){
+
+        $outcome = $quantity * $value - $discount = 50;
+
+    }else{
+
+       echo("es un error ");
+
     }
-
-
-
-
 
 
 ?>
@@ -36,12 +45,16 @@
                 <div class="card-header">
                 <img src="images.jpg" class="rounded mx-auto d-block" alt="foto">
                 </div>
-                <div class="card-body text-dark">
-                <h5 class="card-title">Quantuty : <?php echo($quantity)?></h5>
-                <h5 class="card-title">Discount %: <?php echo($discount)?></h5>
-                <h5 class="card-text">Value : <?php echo($outcome)?></h5>
+                    <div class="card-body text-dark">
+                    <h5 class="card-title">Quantuty : <?php echo($quantity)?></h5>
+                    <h5 class="card-title">Subtotal  : <?php echo($value)?></h5>
+                    <h5 class="card-title">Discount % : <?php echo($discount)?></h5>
+                    <h5 class="card-text">Value : <?php echo($outcome)?></h5>
                 </div>
             </div>
+        </div>
+        <div class="col-md-10 text-center">
+              <a href="view4.html" class="link-primary">To Return</a>
         </div>
     </div>
 </div>
